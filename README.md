@@ -19,13 +19,13 @@ To execute the code you will have to type in terminal the following 2 commands:
 gcc -m32 assembly.s -o objfile -no-pie
 ```
 
-```mod
+```console
 ./objfile < data
 ```
 
 Note: To make the 32-bit version work, considering that the operating system is 64-bit, you will have to install an additional library with the following command:
 
-```mod
+```console
 sudo apt-get install g++-multilib
 ```
 
