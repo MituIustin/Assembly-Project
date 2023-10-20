@@ -15,17 +15,17 @@ To be able to run the code you will need 2 files:
 
 To execute the code you will have to type in terminal the following 2 commands:
 
-```console
+```sh-session
 gcc -m32 assembly.s -o objfile -no-pie
 ```
 
-```console
+```sh-session
 ./objfile < data
 ```
 
 Note: To make the 32-bit version work, considering that the operating system is 64-bit, you will have to install an additional library with the following command:
 
-```console
+```sh-session
 sudo apt-get install g++-multilib
 ```
 
