@@ -15,13 +15,19 @@ To be able to run the code you will need 2 files:
 
 To execute the code you will have to type in terminal the following 2 commands:
 
-__gcc -m32 assembly.s -o objfile -no-pie__
+```console
+gcc -m32 assembly.s -o objfile -no-pie
+```
 
-__./objfile < data__
+```mod
+./objfile < data
+```
 
 Note: To make the 32-bit version work, considering that the operating system is 64-bit, you will have to install an additional library with the following command:
 
-__sudo apt-get install g++-multilib__
+```mod
+sudo apt-get install g++-multilib
+```
 
 ## Example
 
@@ -38,15 +44,25 @@ The following graph is given:
 Let's explain the input:
 
 1   // 1 means it will display the matrix, 2 means the algorithm will display the number of paths
+
 4   // this is the number of nodes
+
 2   // this means that node 0 will have 2 connections (1,2)
+
 2   // this means that node 1 will have 2 connections (2,3)
+
 1   // this means that node 2 will have 1 connection (3)
+
 0   // this means that node 3 will have 0 connections 
+
 1   // first connection of node 0
+
 2   // second connesction of node 0
+
 2   // first connection of node 1
+
 3   // second connection of node 1
+
 3   // the only connection of node 2
 
 ### Output
